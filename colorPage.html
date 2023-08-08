@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Background Color Changer</title>
+<script>
+function colorChanger() {
+  var randomColor = Math.floor(Math.random() * 0xFFFFFF);
+  document.body.style.backgroundColor = "#" + randomColor.toString(16);
+}
+setInterval(colorChanger, 1000);
+</script>
+<link rel="stylesheet" href="color.css">
+</head>
+<body>
+<h1 id="header">This is my header</h1>
+</body>
+</html>
